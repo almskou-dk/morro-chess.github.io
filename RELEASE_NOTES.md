@@ -1,21 +1,10 @@
 # MORRO Chess — Release Notes
 
-## V1.0.0
+## V1.1.0 — Visual refinement
 
-- Complete storefront structure created from the start.
-- English-only storefront content.
-- Premium MORRO visual identity.
-- 12 product images with consistent square framing.
-- 8 category images.
-- Dedicated hero image.
-- Local asset paths verified.
-- Product catalog synchronized with product images and prices.
-- Shopping bag functionality added.
-- Quick-view modal added.
-- Product filtering and sorting added.
-- Responsive navigation added.
-- About page added.
-- Support page added.
-- Demo contact form added.
-- GitHub Pages support included.
-- No remote product-image dependencies.
+- Category tiles changed to true 1:1 square frames.
+- Category imagery re-cropped consistently for cleaner product presentation.
+- Hero rebuilt with a dedicated image layer so the main chess image renders reliably.
+- Hero image contrast and framing refined for a stronger premium presentation.
+- Text remains readable over the hero without washing out the photography.
+- All existing products, prices, local image references and storefront functionality preserved.
