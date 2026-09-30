@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Support — MORRO Chess</title><link rel="icon" href="../assets/images/branding/favicon.jpg" type="image/jpeg"><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header class="site-header compact"><div class="announcement">FREE SHIPPING ON ORDERS OVER $100 · BUILT FOR PLAYERS WHO THINK AHEAD</div><nav class="nav container"><a class="brand" href="../index.html"><img src="../assets/images/branding/morro-logo.jpg" alt="MORRO Chess"></a><button class="nav-toggle" id="navToggle">☰</button><div class="nav-links" id="navLinks"><a href="../index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html" class="active">Support</a><button class="cart-button" id="cartButton">Bag <span id="cartCount">0</span></button></div></nav></header>
+<main>
+<section class="page-hero"><div class="container"><p class="kicker dark">MORRO SUPPORT</p><h1>Questions about<br><em>your next move?</em></h1><p>Our demo support area is ready for product questions, setup guidance and general assistance.</p></div></section>
+<section class="section"><div class="container contact-grid"><div><p class="kicker dark">CONTACT</p><h2>Let's talk chess.</h2><p class="lead">Use the details below for the storefront demo. Replace them with your real business information before launch.</p><div class="contact-list"><div><span>Email</span><a href="mailto:support@morrochess.example">support@morrochess.example</a></div><div><span>Phone</span><a href="tel:+13125550148">+1 (312) 555-0148</a></div><div><span>Location</span><strong>Chicago, IL 60601, USA</strong></div><div><span>Hours</span><strong>Mon–Fri · 9:00 AM–6:00 PM CT</strong></div></div></div><form class="support-form" onsubmit="event.preventDefault(); document.getElementById('formNotice').textContent='Thanks — this demo form is ready to be connected to your support system.';"><label>Name<input required placeholder="Your name"></label><label>Email<input required type="email" placeholder="you@example.com"></label><label>Topic<select><option>Product question</option><option>Order support</option><option>Choosing a set</option><option>Other</option></select></label><label>Message<textarea required rows="6" placeholder="How can we help?"></textarea></label><button class="btn btn-gold" type="submit">Send message</button><p id="formNotice" class="form-notice"></p></form></div></section>
+<section class="dark-section section"><div class="container faq"><div><p class="kicker">QUICK ANSWERS</p><h2>Support notes.</h2></div><div class="faq-list"><details><summary>Is MORRO checkout live?</summary><p>No. This version is a polished storefront demo. The checkout action is intentionally non-transactional.</p></details><details><summary>Can I replace the contact details?</summary><p>Yes. Update the support email, phone, location and hours in the footer and support page.</p></details><details><summary>Can I add more products?</summary><p>Yes. Add a product object in <code>js/app.js</code> and place the matching image in the products folder.</p></details></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><img class="footer-logo" src="../assets/images/branding/morro-logo.jpg" alt="MORRO Chess"><p>Strategy, precision and the joy of the board.</p></div><div><h4>Explore</h4><a href="../index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a></div><div><h4>Support</h4><a href="mailto:support@morrochess.example">support@morrochess.example</a><a href="tel:+13125550148">+1 (312) 555-0148</a></div><div><h4>Location</h4><span>Chicago, IL 60601</span></div></div><div class="container footer-bottom"><span>© 2026 MORRO Chess. All rights reserved.</span><span>Chess · Strategy · Precision</span></div></footer>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><p class="kicker dark">YOUR BAG</p><h3>Selected pieces</h3></div><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button class="btn btn-gold full" id="checkoutButton">Checkout</button></div></aside><div class="scrim" id="scrim"></div>
+<script>window.MORRO_PRODUCTS = [
+  {
+    "id": 1,
+    "name": "Heritage Walnut Tournament Set",
+    "price": 149.0,
+    "category": "Luxury Sets",
+    "tag": "Bestseller",
+    "details": "Walnut board, weighted Staunton pieces, felt-lined storage.",
+    "image": "heritage-walnut-set.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Grandmaster Walnut Board",
+    "price": 129.0,
+    "category": "Boards",
+    "tag": "New",
+    "details": "Hand-finished tournament board with premium wood grain.",
+    "image": "grandmaster-board.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Classic Staunton Piece Set",
+    "price": 58.0,
+    "category": "Chess Pieces",
+    "tag": "Essential",
+    "details": "Complete classic Staunton-style piece set for standard boards.",
+    "image": "classic-staunton-pieces.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pro Digital Chess Clock",
+    "price": 49.0,
+    "category": "Clocks",
+    "tag": "Tournament",
+    "details": "Dual-display digital timer for rapid, blitz and classical play.",
+    "image": "pro-digital-clock.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Heritage Analog Chess Clock",
+    "price": 119.0,
+    "category": "Clocks",
+    "tag": "Collector",
+    "details": "Wooden analog game clock with twin mechanical faces.",
+    "image": "heritage-analog-clock.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Championship Folding Set",
+    "price": 129.0,
+    "category": "Boards",
+    "tag": "Featured",
+    "details": "Folding wooden set with integrated storage for the pieces.",
+    "image": "championship-folding-set.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tournament Green Board",
+    "price": 89.0,
+    "category": "Boards",
+    "tag": "Club Pick",
+    "details": "Competition-inspired green board with clear coordinate markings.",
+    "image": "tournament-green-board.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Weighted Rosewood Pieces",
+    "price": 79.0,
+    "category": "Chess Pieces",
+    "tag": "Premium",
+    "details": "Large weighted pieces designed for a substantial tournament feel.",
+    "image": "weighted-rosewood-pieces.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Collector Storage Case",
+    "price": 99.0,
+    "category": "Storage",
+    "tag": "Organizer",
+    "details": "Wood presentation case with dedicated piece compartments.",
+    "image": "collector-storage-case.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Championship Carry Bag",
+    "price": 74.0,
+    "category": "Travel",
+    "tag": "Travel",
+    "details": "Padded chess bag with room for a roll-up board and accessories.",
+    "image": "championship-carry-bag.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Demonstration Training Board",
+    "price": 109.0,
+    "category": "Training",
+    "tag": "Coach",
+    "details": "Standing demonstration board for lessons, clubs and analysis.",
+    "image": "demonstration-training-board.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Royal Display Set",
+    "price": 189.0,
+    "category": "Collectors",
+    "tag": "Signature",
+    "details": "Decorative premium set designed for display and special occasions.",
+    "image": "royal-display-set.jpg"
+  }
+];</script><script src="../js/app.js"></script></body></html>

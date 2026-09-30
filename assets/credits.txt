@@ -1,0 +1,12 @@
+MORRO CHESS — ASSET NOTES
+
+Branding:
+- morro-logo.jpg: original generated MORRO logo for this project.
+- favicon.jpg: optimized derivative of the MORRO logo.
+
+Product imagery:
+- Product and hero imagery in this V1 package were generated specifically for this project.
+- Images were cropped and optimized locally for consistent storefront presentation.
+- No remote product-image URL is required for the website to render.
+
+All storefront copy is written in English.
